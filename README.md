@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 <img src="assets/img/logo.svg" alt="Agrovia" width="88" />
 
@@ -19,15 +19,26 @@ Landing page de cadastro para o teste grátis do **Agrovia**, o assistente virtu
 
 ## ✨ Sobre o projeto
 
-Essa landing page é a porta de entrada do **Agrovia**: o produtor rural preenche 3 campos, recebe o acesso de teste grátis de 7 dias e é direcionado direto para o WhatsApp, onde o bot assume a conversa.
+Esse repositório reúne as páginas públicas do **Agrovia**: o assistente virtual que organiza a produção da fazenda direto pelo WhatsApp — sem planilha, sem complicação, só um áudio.
 
-Sem apps para baixar. Sem cadastro complicado. Sem cartão de crédito.
+| Página | Arquivo | Objetivo |
+|---|---|---|
+| 🏠 Página inicial | [`index.html`](index.html) | Apresentar o Agrovia e converter visitantes em teste grátis |
+| 📝 Cadastro | [`cadastro.html`](cadastro.html) | Formulário de teste grátis de 7 dias, com redirecionamento para o WhatsApp |
 
 ```
-Formulário  →  Processamento animado  →  Sucesso  →  WhatsApp
+index.html (home)  →  cadastro.html  →  Formulário  →  Processamento  →  Sucesso  →  WhatsApp
 ```
 
 ## 🖼️ Preview
+
+### Página inicial
+
+<div align="center">
+  <img src="assets/img/preview-home.png" width="640" alt="Página inicial do Agrovia" />
+</div>
+
+### Fluxo de cadastro
 
 <div align="center">
   <table>
@@ -42,7 +53,6 @@ Formulário  →  Processamento animado  →  Sucesso  →  WhatsApp
       <td><img src="assets/img/preview-success.png" width="260" alt="Tela de sucesso" /></td>
     </tr>
   </table>
-  <sub>Substitua pelas imagens reais em <code>assets/img/</code></sub>
 </div>
 
 ## 🚀 Funcionalidades
@@ -67,16 +77,21 @@ Formulário  →  Processamento animado  →  Sucesso  →  WhatsApp
 
 ```
 agrovia-bot-lp/
-├── index.html          # Landing page completa (HTML + CSS + Vue)
+├── index.html               # Página inicial (home/hero)
+├── cadastro.html             # Fluxo de cadastro do teste grátis
 ├── assets/
 │   └── img/
-│       └── logo.svg    # Logo da Agrovia
+│       ├── logo.svg
+│       ├── preview-home.png
+│       ├── preview-form.png
+│       ├── preview-processing.png
+│       └── preview-success.png
 └── README.md
 ```
 
 ## ⚙️ Configuração
 
-Antes de publicar, ajuste as constantes no topo do `<script>` dentro do `index.html`:
+Antes de publicar, ajuste as constantes no topo do `<script>` dentro do `cadastro.html`:
 
 ```js
 var API_URL      = 'https://SEU-BACKEND.com/api/trial/cadastro'; // endpoint que recebe o cadastro
@@ -88,17 +103,19 @@ var BOT_NUMBER    = '55XXXXXXXXXXX';                              // número do 
 
 ## ▶️ Rodando localmente
 
-Como é um HTML estático, basta abrir o arquivo direto no navegador:
+Como é um site estático, basta servir os arquivos e navegar entre as páginas:
 
 ```bash
 # Clone o repositório
 git clone https://github.com/Jcarlosk/agrovia-bot-lp.git
 cd agrovia-bot-lp
 
-# Abra o index.html no navegador
-# (ou sirva com um servidor local, ex:)
+# Sirva com um servidor local
 npx serve .
 ```
+
+- Página inicial: `index.html`
+- Fluxo de cadastro: `cadastro.html`
 
 ## 🗺️ Roadmap
 
