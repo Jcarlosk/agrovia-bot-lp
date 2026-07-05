@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrovia - Gestão Rural pelo WhatsApp</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+   <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="container">
+      <a href="#" class="nav-logo" aria-label="Agrovia – página inicial">
+        <div class="nav-logo-icon">
+<img src="/assets/img/icon.svg" alt="">
+        </div>
+    
+      </a>
+ 
+      <ul class="nav-links">
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+ 
+      <a href="/agroviacadrato.html" target="_blank"   class="btn btn-lime nav-cta">Começar grátis</a>
+ 
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+  </nav>
+ 
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+    <div class="mobile-menu-header">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">A</div>
+        <span class="nav-logo-text">Agrovia</span>
+      </a>
+      <button class="mobile-menu-close" id="menuClose" aria-label="Fechar menu">
+        <i class="ph ph-x"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#funcionalidades">Funcionalidades</a></li>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#cases">Cases</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+    <a href="#planos" class="btn btn-lime" style="width:100%;justify-content:center;padding:16px;">Começar grátis</a>
+  </div>
+ 
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" role="img" aria-label="Produtor rural caminhando em plantação de milho"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+   
+        <h1 class="hero-title">
+          Pare de perder tempo com anotações no papel e planilhas complicadas.
+        </h1>
+        <p class="hero-sub">
+          Controle a produção de leite, fornecedores, rebanho e financeiro diretamente pelo WhatsApp. Registre tudo por áudio ou mensagem e tenha relatórios organizados sem burocracia
+        </p>
+        <div class="hero-buttons">
+           <a href="/agroviacadrato.html" target="_blank"  class="btn btn-lime">
+            Quero testar gratuitamente
+            <i class="ph ph-arrow-right"></i>
+          </a>
+          <a href="#como-funciona" class="btn btn-outline-white">
+            Ver demonstração
+            <i class="ph ph-play-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FEATURES -->
+  <section class="features" id="funcionalidades">
+    <div class="container">
+      <div class="features-layout">
+ 
+        <!-- LEFT: título + descrição + link -->
+        <div class="features-left">
+          <h2>Tudo o que você precisa para gerir sua fazenda pelo WhatsApp</h2>
+          <p>
+            Controle leite, rebanho, fornecedores, saúde animal e finanças sem planilhas, sem papel e
+            sem complicação. Tudo direto pelo WhatsApp.
+          </p>
+          <a href="#planos">Ver todas as funcionalidades &nbsp;→</a>
+        </div>
+ 
+        <!-- RIGHT: grid de cards -->
+        <div class="features-right">
+ 
+          <!-- Linha 1: 2 cards -->
+          <div class="cards-row-1">
+ 
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true"><i class="ph ph-microphone"></i></div>
+              <h3 class="feature-title">Registro por Voz</h3>
+              <p class="feature-desc">
+                Anote produção de leite, despesas e informações do rebanho apenas enviando um áudio pelo WhatsApp.
+              </p>
+            </article>
+ 
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true"><i class="ph ph-flask"></i></div>
+              <h3 class="feature-title">Gestão do Tanque</h3>
+              <p class="feature-desc">
+                Controle a produção da fazenda e dos fornecedores em um só lugar, com relatórios automáticos e histórico completo.
+              </p>
+            </article>
+ 
+          </div>
+ 
+          <!-- Linha 2: 3 cards -->
+          <div class="cards-row-2">
+ 
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true"><i class="ph ph-cow"></i></div>
+              <h3 class="feature-title">Produção por Animal</h3>
+              <p class="feature-desc">
+                Acompanhe a produtividade de cada vaca ao longo do tempo e identifique os melhores resultados do rebanho.
+              </p>
+            </article>
+ 
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true"><i class="ph ph-wallet"></i></div>
+              <h3 class="feature-title">Financeiro Integrado</h3>
+              <p class="feature-desc">
+                Registre receitas e despesas e saiba exatamente quanto sua atividade está gerando de lucro.
+              </p>
+            </article>
+ 
+            <article class="feature-card highlight">
+              <div class="feature-icon" aria-hidden="true"><i class="ph ph-chart-bar"></i></div>
+              <h3 class="feature-title">Relatórios Automáticos</h3>
+              <p class="feature-desc">
+                Tenha todas as informações da fazenda organizadas e prontas para consulta.
+              </p>
+            </article>
+ 
+          </div>
+ 
+        </div><!-- /features-right -->
+      </div><!-- /features-layout -->
+    </div>
+  </section>
+ 
+  <!-- HOW IT WORKS -->
+  <section class="how" id="como-funciona">
+    <div class="container">
+      <h2 class="how-title">Da ordenha ao relatório. Tudo pelo WhatsApp.</h2>
+      <div class="steps-grid">
+ 
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Envie um áudio</h3>
+          <p class="step-desc">Fale naturalmente no WhatsApp e o Agrovia registra suas informações automaticamente.</p>
+        </div>
+ 
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Dados organizados</h3>
+          <p class="step-desc">Produção, rebanho, fornecedores e despesas ficam armazenados e fáceis de consultar.</p>
+        </div>
+ 
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Acompanhe sua fazenda</h3>
+          <p class="step-desc">Veja histórico, produtividade dos animais e movimentações do dia a dia.</p>
+        </div>
+ 
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Receba relatórios</h3>
+          <p class="step-desc">Tenha indicadores, resumos e informações prontas para tomar melhores decisões.</p>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="cases">
+    <div class="container">
+      <h2>Por que os produtores escolhem o <span>Agrovia</span></h2>
+      <div class="testimonials-grid">
+ 
+        <div class="tcard">
+          <span class="tcard-location">
+            <i class="ph ph-map-pin" style="font-size:11px;"></i>
+            Goiás
+          </span>
+          <div class="tcard-quote">"</div>
+          <p class="tcard-text">
+            Antes eu anotava tudo em caderno. Hoje mando um áudio no WhatsApp e o Agrovia organiza minha produção automaticamente.
+          </p>
+          <div class="tcard-author">
+            <strong>José Ferreira</strong>
+            <span>Produtor de Leite · Anápolis, GO</span>
+          </div>
+        </div>
+ 
+        <div class="tcard">
+          <span class="tcard-location">
+            <i class="ph ph-map-pin" style="font-size:11px;"></i>
+            Mato Grosso
+          </span>
+          <div class="tcard-quote">"</div>
+          <p class="tcard-text">
+            Agora consigo controlar o leite da fazenda e dos fornecedores em um só lugar. Ficou muito mais fácil fechar a produção do mês.
+          </p>
+          <div class="tcard-author">
+            <strong>Francisco Alves</strong>
+            <span>Produtor Rural · Cuiabá, MT</span>
+          </div>
+        </div>
+ 
+        <div class="tcard">
+          <span class="tcard-location">
+            <i class="ph ph-map-pin" style="font-size:11px;"></i>
+            Minas Gerais
+          </span>
+          <div class="tcard-quote">"</div>
+          <p class="tcard-text">
+            O que mais gostei foi saber exatamente minhas receitas e despesas. Antes eu não tinha noção dos números da fazenda.
+          </p>
+          <div class="tcard-author">
+            <strong>Maria de Fátima</strong>
+            <span>Produtora Rural · Uberlândia, MG</span>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PRICING -->
+  <section class="pricing" id="planos">
+    <div class="container">
+      <div class="pricing-header">
+        <h2>Escolha seu plano</h2>
+ 
+        <div class="toggle-wrap" role="group" aria-label="Período de cobrança">
+          <span class="toggle-label active" id="labelMensal">Mensal</span>
+          <label class="toggle" aria-label="Alternar para anual">
+            <input type="checkbox" id="billingToggle" />
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label" id="labelAnual">Anual</span>
+          <span class="badge-save" id="badgeSave" style="display:none;">Economize 20%</span>
+        </div>
+      </div>
+ 
+      <div class="pricing-grid">
+ 
+        <!-- Plano Produtor -->
+        <div class="plan-card">
+          <p class="plan-name">Plano Produtor</p>
+          <div class="plan-price">
+            <span class="currency">R$</span><span class="amount" id="price1">29,90</span><span class="period">/mês</span>
+          </div>
+          <a href="#" class="btn btn-lime plan-cta">Começar agora</a>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> Registro por áudio</li>
+            <li><i class="ph ph-check-circle"></i> Controle de produção</li>
+            <li><i class="ph ph-check-circle"></i> Gestão do tanque</li>
+            <li><i class="ph ph-check-circle"></i> Financeiro básico</li>
+            <li><i class="ph ph-check-circle"></i> Relatórios automáticos</li>
+          </ul>
+        </div>
+ 
+        <!-- Plano Profissional -->
+        <div class="plan-card featured">
+          <p class="plan-name">Plano Profissional</p>
+          <div class="plan-price">
+            <span class="currency">R$</span><span class="amount" id="price2">49,90</span><span class="period">/mês</span>
+          </div>
+          <a href="#" class="btn btn-lime plan-cta">Começar agora</a>
+          <ul class="plan-features">
+            <li><i class="ph ph-check-circle"></i> Tudo do plano Produtor</li>
+            <li><i class="ph ph-check-circle"></i> Múltiplos usuários</li>
+            <li><i class="ph ph-check-circle"></i> Histórico completo</li>
+            <li><i class="ph ph-check-circle"></i> Controle sanitário</li>
+            <li><i class="ph ph-check-circle"></i> Relatórios avançados</li>
+            <li><i class="ph ph-check-circle"></i> IA para análise de dados</li>
+          </ul>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Pronto para ter o controle da fazenda no seu <span>WhatsApp?</span></h2>
+        <p>
+          Mantenha a agilidade, mas reforce a ferramenta. Sem cartão de crédito. Sem burocracia. O bot começa a trabalhar para você em 2 minutos.
+        </p>
+        <div class="cta-buttons">
+          <a href="#planos" class="btn btn-lime">Testar grátis 14 dias</a>
+          <a href="#como-funciona" class="btn btn-outline-dark">
+            Ver demonstração
+            <i class="ph ph-play-circle"></i>
+          </a>
+        </div>
+        <p class="cta-note">Cancele a qualquer momento. Seus dados estão seguros.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer class="footer" id="blog">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <div class="footer-logo-icon"> <img src="/assets/img/logo.svg" alt=""></div>
+        
+          </a>
+          <p class="footer-desc">
+            Plataforma de gestão pecuária com anotações por áudio. Toda a eficiência no WhatsApp.
+          </p>
+        </div>
+ 
+        <div class="footer-col">
+          <h4>Produto</h4>
+          <ul>
+            <li><a href="#funcionalidades">Funcionalidades</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+ 
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+ 
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2025 Agrovia · <span>Gestão inteligente para o produtor rural brasileiro</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
