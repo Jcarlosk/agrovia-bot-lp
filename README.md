@@ -50,10 +50,15 @@ index.html (home)  →  cadastro.html  →  Formulário  →  Processamento  →
     <tr>
       <td><img src="assets/img/preview-form.png" width="260" alt="Tela de cadastro" /></td>
       <td><img src="assets/img/preview-processing.png" width="260" alt="Tela de processamento" /></td>
-      <td><img src="assets/img/preview-success.png" width="260" alt="Tela de sucesso" /></td>
+      <td width="260" align="center"><sub><i>🚧 print em breve</i></sub></td>
     </tr>
   </table>
 </div>
+
+> Assim que tiver o print da tela de sucesso, salve como `assets/img/preview-success.png` e troque a célula acima por:
+> ```html
+> <td><img src="assets/img/preview-success.png" width="260" alt="Tela de sucesso" /></td>
+> ```
 
 ## 🚀 Funcionalidades
 
