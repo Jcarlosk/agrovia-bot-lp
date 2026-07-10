@@ -371,9 +371,10 @@
   function heroEntrance() {
     const els = [
       { el: '.navbar',       delay: 60,  fromY: -14 },
-      { el: '.hero-title',   delay: 190, fromY: 32  },
-      { el: '.hero-sub',     delay: 310, fromY: 24  },
-      { el: '.hero-buttons', delay: 420, fromY: 18  },
+      { el: '.hero-eyebrow', delay: 130, fromY: 20  },
+      { el: '.hero-title',   delay: 220, fromY: 32  },
+      { el: '.hero-sub',     delay: 340, fromY: 24  },
+      { el: '.hero-buttons', delay: 450, fromY: 18  },
     ];
 
     els.forEach(({ el: sel, delay, fromY }) => {
@@ -861,6 +862,9 @@
       });
       menuClose.addEventListener('click', closeMenu);
       mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
+      });
     }
 
     // Billing toggle
@@ -897,6 +901,55 @@
     });
   }
 
+  /* ─── MOMENT DEMO (showcase encenado) ────────────────────────── */
+  function initMomentDemo() {
+    const stage = document.querySelector('.moment-stage');
+    const chat  = document.querySelector('#momentChat');
+    if (!stage || !chat) return;
+
+    const step1 = chat.querySelector('[data-step="1"]');
+    const step2 = chat.querySelector('[data-step="2"]');
+    const step3 = chat.querySelector('[data-step="3"]');
+    const annoLeft  = document.querySelector('.moment-annotation-left');
+    const annoRight = document.querySelector('.moment-annotation-right');
+    if (!step1 || !step2 || !step3) return;
+
+    let played = false;
+
+    function play() {
+      if (played) return;
+      played = true;
+
+      if (prefersReduced) {
+        step1.classList.add('is-visible');
+        step3.classList.add('is-visible');
+        annoLeft && annoLeft.classList.add('is-visible');
+        annoRight && annoRight.classList.add('is-visible');
+        return;
+      }
+
+      setTimeout(() => step1.classList.add('is-visible'), 150);
+      setTimeout(() => annoLeft && annoLeft.classList.add('is-visible'), 550);
+      setTimeout(() => step2.classList.add('is-visible'), 1150);
+      setTimeout(() => {
+        step2.classList.remove('is-visible');
+        step2.classList.add('is-gone');
+      }, 2500);
+      setTimeout(() => step3.classList.add('is-visible'), 2700);
+      setTimeout(() => annoRight && annoRight.classList.add('is-visible'), 3200);
+    }
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          play();
+          io.disconnect();
+        }
+      });
+    }, { threshold: .45 });
+    io.observe(stage);
+  }
+
   /* ─── INIT ───────────────────────────────────────────────── */
   function init() {
     injectStyles();
@@ -905,6 +958,7 @@
     initNavbar();
     initCursor();
     initOriginal();
+    initMomentDemo();
     heroEntrance();
 
     requestAnimationFrame(() => requestAnimationFrame(() => {

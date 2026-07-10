@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agrovia - Gestão Rural pelo WhatsApp</title>
+  <meta name="description" content="Gestão agropecuária pelo WhatsApp: controle a produção de leite, rebanho, fornecedores e financeiro da fazenda por áudio ou texto, com relatórios automáticos. Teste grátis.">
+  <meta name="keywords" content="gestão agropecuária, WhatsApp, controle de fazenda, relatórios, produção de leite">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,20 +48,24 @@
   <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
     <div class="mobile-menu-header">
       <a href="#" class="nav-logo">
-        <div class="nav-logo-icon">A</div>
-        <span class="nav-logo-text">Agrovia</span>
+        <div class="nav-logo-icon"><img src="/assets/img/icon.svg" alt=""></div>
       </a>
       <button class="mobile-menu-close" id="menuClose" aria-label="Fechar menu">
         <i class="ph ph-x"></i>
       </button>
     </div>
     <ul class="mobile-nav-links">
-      <li><a href="#funcionalidades">Funcionalidades</a></li>
-      <li><a href="#planos">Planos</a></li>
-      <li><a href="#cases">Cases</a></li>
-      <li><a href="#blog">Blog</a></li>
+      <li><a href="#funcionalidades"><span>Funcionalidades</span><i class="ph ph-arrow-up-right"></i></a></li>
+      <li><a href="#planos"><span>Planos</span><i class="ph ph-arrow-up-right"></i></a></li>
+      <li><a href="#cases"><span>Cases</span><i class="ph ph-arrow-up-right"></i></a></li>
+      <li><a href="#blog"><span>Blog</span><i class="ph ph-arrow-up-right"></i></a></li>
     </ul>
-    <a href="#planos" class="btn btn-lime" style="width:100%;justify-content:center;padding:16px;">Começar grátis</a>
+    <a href="/cadastro.html" target="_blank" class="btn btn-lime mobile-menu-cta">Começar grátis</a>
+
+    <div class="mobile-menu-footer">
+      <span class="mobile-menu-tagline"><i class="ph ph-leaf"></i> Gestão que cabe no bolso do produtor</span>
+      <span class="mobile-menu-copy">© 2026 Agrovia</span>
+    </div>
   </div>
  
   <!-- HERO -->
@@ -68,27 +74,110 @@
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content">
-   
+
+        <div class="hero-eyebrow">
+          <span class="voice-proof">
+            <span class="voice-proof-wave" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </span>
+            <span class="voice-proof-text">"Vaca 12 deu <strong>18,5L</strong> hoje" — registrado por áudio, sem digitar nada</span>
+          </span>
+        </div>
+
         <h1 class="hero-title">
           Pare de perder tempo com anotações no papel e planilhas complicadas.
         </h1>
         <p class="hero-sub">
-          Controle a produção de leite, fornecedores, rebanho e financeiro diretamente pelo WhatsApp. Registre tudo por áudio ou mensagem e tenha relatórios organizados sem burocracia
+          Controle a produção de leite, fornecedores, rebanho e financeiro direto pelo <strong>WhatsApp</strong>. Registre tudo por áudio ou mensagem e tenha relatórios organizados sem burocracia.
         </p>
+
+        <p class="hero-proof">
+          <strong>+300 produtores</strong> em <strong>5 estados</strong> já usam o Agrovia todos os dias · nota <strong>4,9</strong> de avaliação
+        </p>
+
         <div class="hero-buttons">
            <a href="/cadastro.html" target="_blank"  class="btn btn-lime">
             Quero testar gratuitamente
             <i class="ph ph-arrow-right"></i>
           </a>
-          <a href="#como-funciona" class="btn btn-outline-white">
+          <a href="#demonstracao" class="btn btn-outline-white">
             Ver demonstração
             <i class="ph ph-play-circle"></i>
           </a>
         </div>
+
+        <p class="hero-guarantee"><i class="ph ph-shield-check"></i> 7 dias grátis · sem cartão de crédito · cancele quando quiser</p>
       </div>
     </div>
   </section>
  
+  <!-- SHOWCASE / DEMO VISUAL -->
+  <section class="showcase" id="demonstracao">
+    <div class="container">
+      <div class="showcase-header">
+        <span class="badge-green">Veja na prática</span>
+        <h2>Você fala. O Agrovia organiza.</h2>
+      </div>
+
+      <div class="moment-stage">
+
+        <div class="moment-annotation moment-annotation-left">
+          <span class="moment-annotation-line" aria-hidden="true"></span>
+          <p>Só falar. Sem digitar nada, sem planilha aberta.</p>
+        </div>
+
+        <div class="showcase-phone">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="wa-header">
+                <div class="wa-avatar"><i class="ph ph-robot"></i></div>
+                <div class="wa-title">
+                  <strong>Agrovia Bot</strong>
+                  <span>online</span>
+                </div>
+              </div>
+              <div class="wa-chat" id="momentChat">
+                <div class="wa-bubble wa-out moment-step" data-step="1">
+                  <div class="wa-audio">
+                    <i class="ph ph-play-fill"></i>
+                    <div class="wa-audio-wave" aria-hidden="true">
+                      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <span class="wa-audio-time">0:14</span>
+                  </div>
+                  <span class="wa-time">08:42</span>
+                </div>
+
+                <div class="wa-typing moment-step" data-step="2" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+
+                <div class="wa-bubble wa-in wa-card moment-step" data-step="3">
+                  <div class="wa-card-head">
+                    <span class="wa-tag wa-tag-ordenha"><i class="ph ph-cow"></i> Ordenha</span>
+                    <span class="wa-relative">Hoje às 08:42</span>
+                  </div>
+                  <p class="wa-card-line">✅ Ordenha registrada!</p>
+                  <p class="wa-card-line wa-card-highlight">
+                    🐄 Vaca 12 — <strong>18,5L</strong>
+                    <span class="wa-top-badge"><i class="ph ph-trophy"></i> Top produtora do dia</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="moment-annotation moment-annotation-right">
+          <span class="moment-annotation-line" aria-hidden="true"></span>
+          <p>Organizado sozinho, na hora — pronto pro relatório.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- FEATURES -->
   <section class="features" id="funcionalidades">
     <div class="container">
@@ -101,6 +190,11 @@
             Controle leite, rebanho, fornecedores, saúde animal e finanças sem planilhas, sem papel e
             sem complicação. Tudo direto pelo WhatsApp.
           </p>
+          <div class="quick-badges">
+            <span class="quick-badge"><i class="ph ph-check-circle"></i> Fácil de usar</span>
+            <span class="quick-badge"><i class="ph ph-check-circle"></i> Sem instalar app</span>
+            <span class="quick-badge"><i class="ph ph-check-circle"></i> Relatório automático</span>
+          </div>
           <a href="#planos">Ver todas as funcionalidades &nbsp;→</a>
         </div>
  
@@ -276,7 +370,8 @@
           <div class="plan-price">
             <span class="currency">R$</span><span class="amount" id="price1">29,90</span><span class="period">/mês</span>
           </div>
-          <a href="#" class="btn btn-lime plan-cta">Começar agora</a>
+          <a href="#" class="btn btn-lime plan-cta">Testar grátis por 7 dias</a>
+          <p class="plan-guarantee"><i class="ph ph-shield-check"></i> Sem cartão de crédito</p>
           <ul class="plan-features">
             <li><i class="ph ph-check-circle"></i> Registro por áudio</li>
             <li><i class="ph ph-check-circle"></i> Controle de produção</li>
@@ -292,7 +387,8 @@
           <div class="plan-price">
             <span class="currency">R$</span><span class="amount" id="price2">49,90</span><span class="period">/mês</span>
           </div>
-          <a href="#" class="btn btn-lime plan-cta">Começar agora</a>
+          <a href="#" class="btn btn-lime plan-cta">Testar grátis por 7 dias</a>
+          <p class="plan-guarantee"><i class="ph ph-shield-check"></i> Sem cartão de crédito</p>
           <ul class="plan-features">
             <li><i class="ph ph-check-circle"></i> Tudo do plano Produtor</li>
             <li><i class="ph ph-check-circle"></i> Múltiplos usuários</li>
@@ -311,12 +407,12 @@
   <section class="cta-section">
     <div class="container">
       <div class="cta-inner">
-        <h2>Pronto para ter o controle da fazenda no seu <span>WhatsApp?</span></h2>
+        <h2>Chega de papel e planilha. Tenha o controle total da sua produção na palma da <span>mão.</span></h2>
         <p>
-          Mantenha a agilidade, mas reforce a ferramenta. Sem cartão de crédito. Sem burocracia. O bot começa a trabalhar para você em 2 minutos.
+          Comece agora e organize leite, rebanho, fornecedores e financeiro em poucos minutos. Sem cartão de crédito. Sem burocracia. O bot começa a trabalhar para você em 2 minutos.
         </p>
         <div class="cta-buttons">
-          <a href="#planos" class="btn btn-lime">Testar grátis 14 dias</a>
+          <a href="#planos" class="btn btn-lime">Testar grátis por 7 dias</a>
           <a href="#como-funciona" class="btn btn-outline-dark">
             Ver demonstração
             <i class="ph ph-play-circle"></i>
